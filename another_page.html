@@ -30,39 +30,80 @@
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <li><a href="index.html">Home</a></li>
-          <li><a href="examples.html">Examples</a></li>
-          <li><a href="page.html">A Page</a></li>
-          <li class="selected"><a href="another_page.html">Another Page</a></li>
+          <li><a href="examples.html">Audience Demographics</a></li>
+          <li><a href="page.html">Content Drilldown</a></li>
+          <li class="selected"><a href="another_page.html">Advantage</a></li>
         </ul>
       </div>
     </div>
-      <div id="content_header"></div>
-    <div id="site_content">
-      <div id="banner"></div>
-	  <div id="sidebar_container">
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <h3>Previous assignments</h3>
-            <ul>
-              <li><a href="https://melissa0816k.github.io/homework1">Homework 1</a></li>
-              <li><a href="https://melissa0816k.github.io/homework2">Homework 2</a></li>
-              <li><a href="https://melissa0816k.github.io/homework3">Homework 3</a></li>
-              <li><a href="https://melissa0816k.github.io/homework4">Homework 4</a></li>
-	            <li><a href="https://melissa0816k.github.io/homework5">Homework 5</a></li>
-            </ul>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-      </div>
-      <div id="content">
-        <!-- insert the page content here -->
-        <h1>Another Page</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-      </div>
+      <h2 style="text-align: center"> Advantage of using Instagram as promotion tool </h2>
+<br>
+<div class="container-fluid">
+<div class="row">    
+<div class="col-md-6 col-sm-offset-1">
+    <div id="mybar03" style="width: 600px;height:400px;"></div>
+<script>
+    option = {
+    title : {
+        text: 'New and Returning Visitors Page View',
+        subtext: 'Google Analytddics'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'right',
+        data:['mobile','desktop','tablet']
+    },
+    series: [
+        {
+            name:'device category',
+            type:'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:51, name:'mobile'},
+                {value:25, name:'desktop'},
+                {value:3, name:'tablet'}
+            ]
+        }
+    ]
+};
+// Use the option to display chart
+        var myChart3 = echarts.init(document.getElementById('mybar03'));
+        myChart3.setOption(option);
+</script>
+</div>
+<div class="col-md-4 col-sm-offset-1">
+    <br>
+    <h4> Which device they used to view my Webpage?</h4>
+    <p> Most of them used their smartphone to view my webpage only a few would use tablet such as iPad to visit my webpage.
+        Since I put my webpage link on Instagram, people might find it easier to get access to my webpage. My acquaintances 
+        often browse Instagram as long as they are taking public transport or having spare time. Therefore, I chose Instagram
+        as my major promotion channel of <a href="https://melissa0816k.github.io/">my Webpage</a>.</p>
+</div>
+</div>
+</div>
     </div>
     <div id="content_footer"></div>
     <div id="footer">
